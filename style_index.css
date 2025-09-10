@@ -81,6 +81,10 @@ nav a:hover {
     box-shadow: 0 2px 12px rgba(255, 213, 128, 0.15);
 }
 
+.MainContent p {
+    padding: 0 2rem;
+}
+
 /* Footer */
 .Footer {
     background-color: #2D1A3A;
@@ -119,4 +123,35 @@ button:hover,
 .btn:hover {
     background-color: #FFD580;
     color: #23112B;
+}
+
+#loading-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #181818;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+#softball-icon {
+    font-size: 6rem;
+    color: #FFD580;
+    animation: flash 1s infinite;
+}
+
+@keyframes flash {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.3;
+    }
 }
